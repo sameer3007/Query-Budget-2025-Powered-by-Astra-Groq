@@ -34,6 +34,8 @@ huggingface_hub
 cassandra-driver
 tiktoken
 datasets
+cassio
+
 
 
 
