@@ -18,7 +18,7 @@ cassio.init(token=ASTRA_DB_APPLICATION_TOKEN,
 
 # ----------------- Load Embedding Model & LLM -----------------
 embedding = HuggingFaceEmbeddings()
-llm = ChatGroq(model="Gemma2-9b-It", groq_api_key=GROQ_API_KEY)
+llm = ChatGroq(model="llama-3.1-8b-instant", groq_api_key=GROQ_API_KEY)
 
 # ----------------- Connect to Existing Vector DB -----------------
 astra_vector_store = Cassandra(
@@ -61,3 +61,4 @@ for sender, msg in st.session_state.chat_history:
         st.markdown(f"**🧑 You:** {msg}")
     else:
         st.markdown(f"**🤖 AI:** {msg}")
+
