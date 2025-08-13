@@ -35,14 +35,7 @@ cassandra-driver
 tiktoken
 datasets
 cassio
-
-
-
-
-
-
-
-
+sentence-transformers
 
 
 
